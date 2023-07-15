@@ -1,14 +1,13 @@
+import { combineReducers } from "redux";
 
-import {combineReducers } from 'redux';
-
-import cartReducer from './cartReducer';
+import cartReducer from "./cartReducer";
 
 let reducer = combineReducers({
-    cartReducer: cartReducer,
+  cartReducer: cartReducer,
 });
 
-const rootReducer =(state,action) => {
-    return reducer(state,action);
+const rootReducer = (state, action) => {
+  return reducer(state, action);
 };
 
 export default rootReducer;
